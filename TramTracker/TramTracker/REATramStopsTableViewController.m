@@ -8,7 +8,7 @@
 
 #import "REATramStopsTableViewController.h"
 #import "REANextTramsTableViewController.h"
-//#import "REATramStopMapViewController.h"
+#import "REATramStopMapViewController.h"
 #import "REATramStopsProvider.h"
 #import "REANextTramsProvider.h"
 
@@ -74,6 +74,11 @@
 
         REANextTramsTableViewController *destionationController = segue.destinationViewController;
         destionationController.nextTramsProvider = [[REANextTramsProvider alloc] initWithRouteNumber:self.tramStopsProvider.routeNumber tramStop:tramStop];
+    }
+    else if ([segue.identifier isEqualToString:@"TramStopMapSegue"])
+    {
+        REATramStopMapViewController *destionationController = segue.destinationViewController;
+        destionationController.tramStopsProvider = self.tramStopsProvider;
     }
 }
 

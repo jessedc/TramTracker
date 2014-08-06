@@ -23,6 +23,7 @@
 		88958CAC199187BB00BE8D30 /* REATram.m in Sources */ = {isa = PBXBuildFile; fileRef = 88958CAB199187BB00BE8D30 /* REATram.m */; };
 		88958CB41991974200BE8D30 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88958CB31991974200BE8D30 /* MapKit.framework */; };
 		88958CB51991974700BE8D30 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88958C7D199046C600BE8D30 /* CoreLocation.framework */; };
+		88C1BF191991BBC300F95B7D /* REATramStopMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C1BF181991BBC300F95B7D /* REATramStopMapViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,8 @@
 		88958CAA199187BB00BE8D30 /* REATram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REATram.h; sourceTree = "<group>"; };
 		88958CAB199187BB00BE8D30 /* REATram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REATram.m; sourceTree = "<group>"; };
 		88958CB31991974200BE8D30 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		88C1BF171991BBC300F95B7D /* REATramStopMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REATramStopMapViewController.h; sourceTree = "<group>"; };
+		88C1BF181991BBC300F95B7D /* REATramStopMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REATramStopMapViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +109,8 @@
 		8813C75619877D180024F431 /* TramTracker */ = {
 			isa = PBXGroup;
 			children = (
+				88C1BF171991BBC300F95B7D /* REATramStopMapViewController.h */,
+				88C1BF181991BBC300F95B7D /* REATramStopMapViewController.m */,
 				883376E91991BA470008ACBD /* REANextTramsTableViewController.h */,
 				883376EA1991BA470008ACBD /* REANextTramsTableViewController.m */,
 				883376E61991B9330008ACBD /* REATramStopsTableViewController.h */,
@@ -220,6 +225,7 @@
 				8813C76119877D180024F431 /* REAAppDelegate.m in Sources */,
 				88958C7C1990435C00BE8D30 /* REATramStop.m in Sources */,
 				883376E81991B9330008ACBD /* REATramStopsTableViewController.m in Sources */,
+				88C1BF191991BBC300F95B7D /* REATramStopMapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

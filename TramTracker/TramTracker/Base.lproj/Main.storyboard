@@ -46,11 +46,54 @@
                             <outlet property="delegate" destination="rVt-KM-e2t" id="v02-oi-aay"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Stops" id="5eq-cR-lJa"/>
+                    <navigationItem key="navigationItem" title="Stops" id="5eq-cR-lJa">
+                        <barButtonItem key="rightBarButtonItem" title="Map" id="9yY-pd-nsj">
+                            <connections>
+                                <segue destination="JUz-va-spd" kind="push" identifier="TramStopMapSegue" id="Sh3-pR-zcG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kEG-m5-wi8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="735" y="483"/>
+        </scene>
+        <!--Tram Stop Map View Controller - Map-->
+        <scene sceneID="Rj9-yP-Rd4">
+            <objects>
+                <viewController id="JUz-va-spd" customClass="REATramStopMapViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZsO-Ur-PRQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="75i-7N-oMz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jVW-CA-yfD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="C8v-1K-g4u">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="JUz-va-spd" id="alt-MP-3n2"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="C8v-1K-g4u" secondAttribute="trailing" id="Cyc-Qn-OJg"/>
+                            <constraint firstItem="C8v-1K-g4u" firstAttribute="top" secondItem="jVW-CA-yfD" secondAttribute="top" id="II9-ss-rYW"/>
+                            <constraint firstItem="C8v-1K-g4u" firstAttribute="leading" secondItem="jVW-CA-yfD" secondAttribute="leading" id="UC9-F6-orm"/>
+                            <constraint firstAttribute="bottom" secondItem="C8v-1K-g4u" secondAttribute="bottom" id="r7p-Ok-pSh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Map" id="i98-UC-uWN"/>
+                    <connections>
+                        <outlet property="mapView" destination="C8v-1K-g4u" id="FDO-fZ-5bS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vJ1-we-Bos" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1288" y="346"/>
         </scene>
         <!--Next Trams Table View Controller - Stop Details-->
         <scene sceneID="u0m-T2-Yv0">
@@ -95,7 +138,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kwU-Fj-Oin" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1268" y="483"/>
+            <point key="canvasLocation" x="1282" y="1044"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="XBt-MS-ruy">
