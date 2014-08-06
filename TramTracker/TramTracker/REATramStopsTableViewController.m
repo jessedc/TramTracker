@@ -7,7 +7,7 @@
 //
 
 #import "REATramStopsTableViewController.h"
-//#import "REANextTramsTableViewController.h"
+#import "REANextTramsTableViewController.h"
 //#import "REATramStopMapViewController.h"
 #import "REATramStopsProvider.h"
 #import "REANextTramsProvider.h"
@@ -69,9 +69,11 @@
 {
     if ([segue.identifier isEqualToString:@"TramStopDetailSegue"])
     {
-    }
-    else if ([segue.identifier isEqualToString:@"TramStopMapSegue"])
-    {
+        NSIndexPath *selectedIndex = [self.tableView indexPathForSelectedRow];
+        REATramStop *tramStop = [self.tramStopsProvider stopAtIndex:selectedIndex.row];
+
+        REANextTramsTableViewController *destionationController = segue.destinationViewController;
+        destionationController.nextTramsProvider = [[REANextTramsProvider alloc] initWithRouteNumber:self.tramStopsProvider.routeNumber tramStop:tramStop];
     }
 }
 
