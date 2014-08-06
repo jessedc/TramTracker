@@ -15,6 +15,7 @@
 		8813C76119877D180024F431 /* REAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8813C76019877D180024F431 /* REAAppDelegate.m */; };
 		8813C76419877D180024F431 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8813C76219877D180024F431 /* Main.storyboard */; };
 		8813C76919877D180024F431 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8813C76819877D180024F431 /* Images.xcassets */; };
+		883376E81991B9330008ACBD /* REATramStopsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 883376E71991B9330008ACBD /* REATramStopsTableViewController.m */; };
 		88958C6C19903C6B00BE8D30 /* REATramStopsProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 88958C6B19903C6B00BE8D30 /* REATramStopsProvider.m */; };
 		88958C7C1990435C00BE8D30 /* REATramStop.m in Sources */ = {isa = PBXBuildFile; fileRef = 88958C7B1990435C00BE8D30 /* REATramStop.m */; };
 		88958CA91991866300BE8D30 /* REANextTramsProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 88958CA81991866300BE8D30 /* REANextTramsProvider.m */; };
@@ -38,6 +39,8 @@
 		8813C76819877D180024F431 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8813C76F19877D180024F431 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		8813C78519877D900024F431 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		883376E61991B9330008ACBD /* REATramStopsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REATramStopsTableViewController.h; sourceTree = "<group>"; };
+		883376E71991B9330008ACBD /* REATramStopsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REATramStopsTableViewController.m; sourceTree = "<group>"; };
 		88958C6A19903C6B00BE8D30 /* REATramStopsProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REATramStopsProvider.h; sourceTree = "<group>"; };
 		88958C6B19903C6B00BE8D30 /* REATramStopsProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REATramStopsProvider.m; sourceTree = "<group>"; };
 		88958C7A1990435C00BE8D30 /* REATramStop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REATramStop.h; sourceTree = "<group>"; };
@@ -100,6 +103,8 @@
 		8813C75619877D180024F431 /* TramTracker */ = {
 			isa = PBXGroup;
 			children = (
+				883376E61991B9330008ACBD /* REATramStopsTableViewController.h */,
+				883376E71991B9330008ACBD /* REATramStopsTableViewController.m */,
 				88958C6919903C5500BE8D30 /* Domain */,
 				8813C75F19877D180024F431 /* REAAppDelegate.h */,
 				8813C76019877D180024F431 /* REAAppDelegate.m */,
@@ -208,6 +213,7 @@
 				88958C6C19903C6B00BE8D30 /* REATramStopsProvider.m in Sources */,
 				8813C76119877D180024F431 /* REAAppDelegate.m in Sources */,
 				88958C7C1990435C00BE8D30 /* REATramStop.m in Sources */,
+				883376E81991B9330008ACBD /* REATramStopsTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
