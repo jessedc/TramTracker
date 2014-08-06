@@ -7,7 +7,7 @@ This application is hardcoded for route 109.
 
 ## Screenshot
 
-![](Screenshot.png)
+![](Screenshot5c.png)
 
 ## Storyboard Layout
 
