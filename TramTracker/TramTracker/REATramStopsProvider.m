@@ -35,7 +35,7 @@ static NSString * const kREATramTrackerAPIKey = @"4757107f-4e81-4773-9cc4-6ba2f4
 - (void)fetchStops
 {
     NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
-    NSURL *getRouteStopsByRouteURL = [NSURL URLWithString:[NSString stringWithFormat:@"http://ws3.tramtracker.com.au/TramTracker/RestService/GetRouteStopsByRoute/%d/?aid=TTIOSJSON&tkn=%@", self.routeNumber, kREATramTrackerAPIKey]];
+    NSURL *getRouteStopsByRouteURL = [NSURL URLWithString:[NSString stringWithFormat:@"http://ws3.tramtracker.com.au/TramTracker/RestService/GetRouteStopsByRoute/%ld/?aid=TTIOSJSON&tkn=%@", (long)self.routeNumber, kREATramTrackerAPIKey]];
     NSURLSessionDataTask *dataTask = [session dataTaskWithURL:getRouteStopsByRouteURL completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
 
         NSAssert(error == nil, @"Network error must be nil");
