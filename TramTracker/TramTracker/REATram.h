@@ -21,6 +21,10 @@
 
 @end
 
+@interface NSObject (REANextTrams)
+- (NSArray *)asArray;
+@end
+
 @interface NSArray (REANextTrams)
 
 - (NSArray *)asNextTrams;

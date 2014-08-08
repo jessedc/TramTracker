@@ -57,3 +57,12 @@
 }
 
 @end
+
+@implementation NSObject (REANextTrams)
+
+- (NSArray *)asArray
+{
+    return [self isKindOfClass:[NSArray class]] ? (NSArray *)self : @[];
+}
+
+@end
