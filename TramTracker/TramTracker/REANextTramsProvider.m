@@ -46,7 +46,9 @@ static NSString * const kREATramTrackerAPIKey = @"4757107f-4e81-4773-9cc4-6ba2f4
         NSDictionary *JSON = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
         NSAssert(jsonError == nil, @"JSON error must be nil");
 
-        self.nextTrams = [JSON[@"responseObject"] asNextTrams];
+        id responseObject = JSON[@"responseObject"];
+        NSArray *nextTrams = [responseObject isKindOfClass:[NSArray class]] ? responseObject : @[];
+        self.nextTrams = [nextTrams asNextTrams];
 
         dispatch_async(dispatch_get_main_queue(), ^{
             __strong __typeof(self.delegate) strongDelegate = self.delegate;
